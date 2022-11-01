@@ -1,0 +1,8 @@
+<div class="sneakerBox">
+  <div *ngFor="let item of itemList">
+    <app-navbar [item]="item"></app-navbar>
+  </div>
+  <button (click)="getTotal()">thanh toan</button>
+  <h4>{{ total }}</h4>
+</div>
+<router-outlet></router-outlet>
